@@ -5,3 +5,7 @@
 .navbar-brand {
   font-size: 28px;
 }
+
+.dn{
+  display: none;
+}

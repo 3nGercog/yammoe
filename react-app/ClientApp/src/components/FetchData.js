@@ -43,10 +43,12 @@ export class FetchData extends Component {
       : FetchData.renderForecastsTable(this.state.forecasts);
 
     return (
-      <div>
-        <h1 id="tabelLabel" >Weather forecast</h1>
-        <p>This component demonstrates fetching data from the server.</p>
-        {contents}
+      <div className="wrapper row2">
+        <div className="hoc clear">
+          <h1 id="tabelLabel" >Weather forecast</h1>
+          <p>This component demonstrates fetching data from the server.</p>
+          {contents}
+        </div>
       </div>
     );
   }

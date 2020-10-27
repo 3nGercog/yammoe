@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Breadcrumbs from 'react-router-dynamic-breadcrumbs'
 import './NavMenu.css';
+
+
+const routes = {
+  '/': 'Home',
+  '/pages': 'Pages',
+  '/counter': 'Counter',
+  '/fetch-data': 'Fetch Data'
+};
+
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -12,7 +22,8 @@ export class NavMenu extends Component {
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
       collapsed: true,
-      phone: "+00 (123) 456 7890"
+      phone: "+00 (123) 456 7890",
+      isHomePage: window.location.pathname === '/'
     };
   }
 
@@ -39,29 +50,26 @@ export class NavMenu extends Component {
               </div>
               <Navbar id="mainav" className="fl_right">
                 <ul className="clear">
-                  <NavItem className="active">
-                    <NavLink tag={Link} to="/">Home</NavLink>
-                  </NavItem>
                   <NavItem>
                     <NavLink className="drop" tag={Link} to="#">Pages</NavLink>
                     <ul>
                       <NavItem>
-                        <NavLink tag={Link} to="pages/gallery.html">Gallery</NavLink>
+                        <NavLink tag={Link} to="pages/gallery">Gallery</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink tag={Link} to="pages/full-width.html">Full Width</NavLink>
+                        <NavLink tag={Link} to="pages/full-width">Full Width</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink tag={Link} to="pages/sidebar-left.html">Sidebar Left</NavLink>
+                        <NavLink tag={Link} to="pages/sidebar-left">Sidebar Left</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink tag={Link} to="pages/sidebar-right.html">Sidebar Right</NavLink>
+                        <NavLink tag={Link} to="pages/sidebar-right">Sidebar Right</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink tag={Link} to="pages/basic-grid.html">Basic Grid</NavLink>
+                        <NavLink tag={Link} to="pages/basic-grid">Basic Grid</NavLink>
                       </NavItem>
                       <NavItem>
-                        <NavLink tag={Link} to="pages/font-icons.html">Font Icons</NavLink>
+                        <NavLink tag={Link} to="pages/font-icons">Font Icons</NavLink>
                       </NavItem>
                     </ul>
                   </NavItem>
@@ -103,7 +111,8 @@ export class NavMenu extends Component {
               </Navbar>
             </header>
           </div>
-          <div id="pageintro" className="hoc clear"> 
+          
+          <div id="pageintro" className={this.state.isHomePage ? "hoc clear" : "dn"}> 
             <article>
               <p>Habitant morbi tristique</p>
               <h3 className="heading">Senectus et netus</h3>
@@ -116,6 +125,12 @@ export class NavMenu extends Component {
               </footer>
             </article>
           </div>
+          
+          <Breadcrumbs 
+            WrapperComponent={(props) => <div id="breadcrumb" className="hoc cleat"><ul>{props.children}</ul></div>}
+            LinkComponent={(props) => <li>{props.children}</li>} 
+            mappedRoutes={routes} 
+            routeMatcherRegex="([\w-]+)"/>
         </div>
     );
   }
