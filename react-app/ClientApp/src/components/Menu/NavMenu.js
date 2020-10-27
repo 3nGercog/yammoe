@@ -9,7 +9,8 @@ const routes = {
   '/': 'Home',
   '/pages': 'Pages',
   '/counter': 'Counter',
-  '/fetch-data': 'Fetch Data'
+  '/fetch-data': 'Fetch Data',
+  '/pages/basic-grid': "BASIC GRID"
 };
 
 
@@ -129,7 +130,7 @@ export class NavMenu extends Component {
           
           <Breadcrumbs 
             WrapperComponent={(props) => <div id="breadcrumb" className="hoc cleat"><ul>{props.children}</ul></div>}
-            ActiveLinkComponent={(props) => <li><a href="#">{props.children}</a></li>}
+            ActiveLinkComponent={(props) => <li><a>{props.children}</a></li>}
             LinkComponent={(props) => <li>{props.children}</li>} 
             mappedRoutes={routes} 
             routeMatcherRegex="([\w-]+)"/>

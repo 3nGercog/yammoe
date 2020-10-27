@@ -4,6 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
+import { BasicGrid } from './components/Pages/BasicGrid'
 
 import './layout.css'
 
@@ -36,6 +37,7 @@ export default class App extends Component {
         <Route exact path='/' component={Home}/>
         <Route path='/counter' component={Counter} />
         <Route path='/fetch-data' component={FetchData} />
+        <Route path='/pages/basic-grid' component={BasicGrid} />
       </Layout>
     );
   }
