@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import Breadcrumbs from 'react-router-dynamic-breadcrumbs'
+import { AppBreadcrumbs } from '../Breadcrumbs/AppBreadcrumbs';
 import './NavMenu.css';
 
-
-const routes = {
-  '/': 'Home',
-  '/pages': 'Pages',
-  '/counter': 'Counter',
-  '/fetch-data': 'Fetch Data',
-  '/pages/basic-grid': "BASIC GRID"
-};
 
 
 export class NavMenu extends Component {
@@ -127,13 +119,7 @@ export class NavMenu extends Component {
               </footer>
             </article>
           </div>
-          
-          <Breadcrumbs 
-            WrapperComponent={(props) => <div id="breadcrumb" className="hoc cleat"><ul>{props.children}</ul></div>}
-            ActiveLinkComponent={(props) => <li><a>{props.children}</a></li>}
-            LinkComponent={(props) => <li>{props.children}</li>} 
-            mappedRoutes={routes} 
-            routeMatcherRegex="([\w-]+)"/>
+          <AppBreadcrumbs />
         </div>
     );
   }
