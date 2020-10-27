@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/gallery/01.png';
 
 export class Gallery extends Component {
@@ -13,36 +14,36 @@ export class Gallery extends Component {
                         <figure>
                         <header className="heading">Gallery Title Goes Here</header>
                         <ul className="nospace clear">
-                            <li className="one_quarter first"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter first"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter first"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
-                            <li className="one_quarter"><a href="#"><img src={logo} alt=""/></a></li>
+                            <li className="one_quarter first"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter first"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter first"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
+                            <li className="one_quarter"><Link to="#"><img src={logo} alt=""/></Link></li>
                         </ul>
                         <figcaption>Gallery Description Goes Here</figcaption>
                         </figure>
                     </div>
                     <nav className="pagination">
                         <ul>
-                        <li><a href="#">&laquo; Previous</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
+                        <li><Link to="#">&laquo; Previous</Link></li>
+                        <li><Link to="#">1</Link></li>
+                        <li><Link to="#">2</Link></li>
                         <li><strong>&hellip;</strong></li>
-                        <li><a href="#">6</a></li>
+                        <li><Link to="#">6</Link></li>
                         <li className="current"><strong>7</strong></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
+                        <li><Link to="#">8</Link></li>
+                        <li><Link to="#">9</Link></li>
                         <li><strong>&hellip;</strong></li>
-                        <li><a href="#">14</a></li>
-                        <li><a href="#">15</a></li>
-                        <li><a href="#">Next &raquo;</a></li>
+                        <li><Link to="#">14</Link></li>
+                        <li><Link to="#">15</Link></li>
+                        <li><Link to="#">Next &raquo;</Link></li>
                         </ul>
                     </nav>
                     </div>

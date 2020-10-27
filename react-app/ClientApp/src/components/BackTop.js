@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export class BackTop extends Component{
     static displayName = BackTop.name;
@@ -14,7 +15,7 @@ export class BackTop extends Component{
 
     render() {
         return (
-            <a id="backtotop" onClick={this.scrollToTop}><i className="fas fa-chevron-up" aria-hidden="true"></i></a>
+            <Link id="backtotop" to={'#/'} onClick={this.scrollToTop}><i className="fas fa-chevron-up" aria-hidden="true"></i></Link>
         );
     }
 }
