@@ -29,7 +29,8 @@ export class NavMenu extends Component {
 
   toggleNavbar () {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
+      isHomePage: window.location.pathname === '/'
     });
   }
 
@@ -128,6 +129,7 @@ export class NavMenu extends Component {
           
           <Breadcrumbs 
             WrapperComponent={(props) => <div id="breadcrumb" className="hoc cleat"><ul>{props.children}</ul></div>}
+            ActiveLinkComponent={(props) => <li><a href="#">{props.children}</a></li>}
             LinkComponent={(props) => <li>{props.children}</li>} 
             mappedRoutes={routes} 
             routeMatcherRegex="([\w-]+)"/>
