@@ -7,8 +7,9 @@ const routes = {
   '/pages': 'Pages',
   '/counter': 'Counter',
   '/fetch-data': 'Fetch Data',
-  '/pages/basic-grid': 'BASIC GRID',
-  'pages/gallery': 'Gallery'
+  '/pages/basic-grid': 'Basic Grid',
+  'pages/gallery': 'Gallery',
+  '/pages/full-width': 'Full Width'
 };
 
 export class AppBreadcrumbs extends Component {

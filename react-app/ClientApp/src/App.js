@@ -6,6 +6,7 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { BasicGrid } from './components/Pages/BasicGrid';
 import { Gallery } from './components/Pages/Gallery';
+import { FullWidth } from './components/Pages/FullWidth';
 
 import './layout.css'
 
@@ -40,6 +41,7 @@ export default class App extends Component {
         <Route path='/fetch-data' component={FetchData} />
         <Route path='/pages/basic-grid' component={BasicGrid} />
         <Route path="/pages/gallery" component={Gallery} />
+        <Route path="/pages/full-width" component={FullWidth} />
       </Layout>
     );
   }
