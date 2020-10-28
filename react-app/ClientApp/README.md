@@ -1,1 +1,1 @@
-The react project template with ASP.NET Core.
+The react project.
