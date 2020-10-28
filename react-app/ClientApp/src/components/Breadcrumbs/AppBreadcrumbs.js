@@ -11,7 +11,8 @@ const routes = {
   '/pages/gallery': 'Gallery',
   '/pages/full-width': 'Full Width',
   '/pages/sidebar-left': 'Sidebar Left',
-  '/pages/sidebar-right': 'Sidebar Right'
+  '/pages/sidebar-right': 'Sidebar Right',
+  '/pages/font-icons': 'Font Icon'
 };
 
 export class AppBreadcrumbs extends Component {
