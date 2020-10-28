@@ -7,8 +7,11 @@ import { Counter } from './components/Counter';
 import { BasicGrid } from './components/Pages/BasicGrid';
 import { Gallery } from './components/Pages/Gallery';
 import { FullWidth } from './components/Pages/FullWidth';
+import { SidebarLeft } from './components/Pages/SidebarLeft';
+import { SidebarRight } from './components/Pages/SidebarRight';
 
 import './layout.css'
+
 
 
 export default class App extends Component {
@@ -42,6 +45,8 @@ export default class App extends Component {
         <Route path='/pages/basic-grid' component={BasicGrid} />
         <Route path="/pages/gallery" component={Gallery} />
         <Route path="/pages/full-width" component={FullWidth} />
+        <Route path="/pages/sidebar-left" component={SidebarLeft} />
+        <Route path="/pages/sidebar-right" component={SidebarRight} />
       </Layout>
     );
   }

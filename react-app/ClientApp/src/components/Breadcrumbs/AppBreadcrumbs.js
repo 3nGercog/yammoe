@@ -9,7 +9,9 @@ const routes = {
   '/fetch-data': 'Fetch Data',
   '/pages/basic-grid': 'Basic Grid',
   '/pages/gallery': 'Gallery',
-  '/pages/full-width': 'Full Width'
+  '/pages/full-width': 'Full Width',
+  '/pages/sidebar-left': 'Sidebar Left',
+  '/pages/sidebar-right': 'Sidebar Right'
 };
 
 export class AppBreadcrumbs extends Component {
