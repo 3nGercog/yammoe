@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/react-app/bin/Debug/netcoreapp3.1/react-app.dll",
+            "program": "${workspaceFolder}/react-app/bin/Debug/net6.0/react-app.dll",
             "args": [],
             "cwd": "${workspaceFolder}/react-app",
             "stopAtEntry": false,
