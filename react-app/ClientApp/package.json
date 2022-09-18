@@ -1,6 +1,6 @@
 {
   "name": "react_app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.3",
@@ -50,5 +50,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "The react project.",
+  "main": "index.js",
+  "author": "ST",
+  "license": "ISC"
 }

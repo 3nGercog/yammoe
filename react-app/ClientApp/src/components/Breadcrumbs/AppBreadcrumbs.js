@@ -4,21 +4,22 @@ import Breadcrumbs from 'react-router-dynamic-breadcrumbs'
 
 const routes = {
   '/': 'Home',
-  '/pages': 'Pages',
-  '/counter': 'Counter',
-  '/fetch-data': 'Fetch Data',
   '/pages/basic-grid': 'Basic Grid',
   '/pages/gallery': 'Gallery',
   '/pages/full-width': 'Full Width',
   '/pages/sidebar-left': 'Sidebar Left',
   '/pages/sidebar-right': 'Sidebar Right',
-  '/pages/font-icons': 'Font Icon'
+  '/pages/font-icons': 'Font Icon',
+  '/pages/map': 'Map',
+  '/counter': 'Counter',
+  '/fetch-data': 'Fetch Data'
 };
 
 export class AppBreadcrumbs extends Component {
     static displayName = AppBreadcrumbs.name;
 
     render() {
+
         return (
             <Breadcrumbs 
                 WrapperComponent={(props) => <div id="breadcrumb" className="hoc cleat"><ul>{props.children}</ul></div>}

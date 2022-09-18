@@ -10,6 +10,7 @@ import { FullWidth } from './components/Pages/FullWidth';
 import { SidebarLeft } from './components/Pages/SidebarLeft';
 import { SidebarRight } from './components/Pages/SidebarRight';
 import { FontIcons } from './components/Pages/FontIcons';
+import { Map } from './components/Pages/Maps/Map';
 
 import './layout.css'
 
@@ -49,6 +50,7 @@ export default class App extends Component {
         <Route path="/pages/sidebar-left" component={SidebarLeft} />
         <Route path="/pages/sidebar-right" component={SidebarRight} />
         <Route path="/pages/font-icons" component={FontIcons} />
+        <Route path="/pages/map" component={Map} />
       </Layout>
     );
   }

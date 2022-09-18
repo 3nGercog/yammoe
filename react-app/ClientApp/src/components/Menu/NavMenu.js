@@ -65,6 +65,9 @@ export class NavMenu extends Component {
                       <NavItem>
                         <NavLink tag={Link} to="pages/font-icons">Font Icons</NavLink>
                       </NavItem>
+                      <NavItem>
+                        <NavLink tag={Link} to="pages/map">Map</NavLink>
+                      </NavItem>
                     </ul>
                   </NavItem>
                   <NavItem>
@@ -91,9 +94,6 @@ export class NavMenu extends Component {
                         <NavLink tag={Link} to="#">Level 2</NavLink>
                       </NavItem>
                     </ul>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink tag={Link} to="#">Link Text</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink tag={Link} to="/counter">Counter</NavLink>
